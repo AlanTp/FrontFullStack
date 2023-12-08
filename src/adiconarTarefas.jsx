@@ -10,7 +10,7 @@ const adicionarTarefa = async (title, description, dueDate) => {
   console.log(dados);
 
   try {
-    const response = await axios.post('http://localhost:8080/tasks', dados);
+    const response = await axios.post('https://fullstack-ykmk.onrender.com/tasks', dados);
     console.log(response.data);
     return response.data;
   } catch (error) {
